@@ -11,10 +11,9 @@ RUN locale-gen "en_US.UTF-8" && \
     ENV LC_ALL "en_US.UTF-8"
     ENV LC_CTYPE "en_US.UTF-8"
 
-
 # TODO: decide if needed
 # RUN apt-get install libxml2-dev
 # install fpm
 RUN apt-get update && \
-    apt-get install -y build-essential rpm ruby-dev && \
+    apt-get install -y bsdtar build-essential rpm ruby-dev && \
     gem install fpm
