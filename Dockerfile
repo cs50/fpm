@@ -15,5 +15,5 @@ RUN locale-gen "en_US.UTF-8" && \
 # RUN apt-get install libxml2-dev
 # install fpm
 RUN apt-get update && \
-    apt-get install -y bsdtar build-essential rpm ruby-dev && \
+    apt-get install -y bsdtar build-essential rpm ruby-dev wget && \
     gem install fpm
