@@ -13,5 +13,5 @@ RUN locale-gen "en_US.UTF-8" && \
 
 # install fpm
 RUN apt-get update && \
-    apt-get install -y build-essential ruby-dev && \
+    apt-get install -y build-essential rpm ruby-dev && \
     gem install fpm
